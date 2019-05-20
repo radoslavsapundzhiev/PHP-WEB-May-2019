@@ -4,7 +4,8 @@
 </form>
 
 <?php
-    if(isset($_GET['person'])){
-        echo "Hello " . htmlspecialchars($_GET['person']) . "!";
-    }
+if(isset($_GET['person'])){
+    $name = htmlspecialchars($_GET['person']);
+    echo "Hello, $name!";
+}
 ?>
