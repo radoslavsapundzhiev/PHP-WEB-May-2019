@@ -1,0 +1,15 @@
+USE `php`;
+
+CREATE TABLE `people`(
+	`id` INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	`name` VARCHAR(200) NOT NULL,
+	`picture` LONGBLOB NULL,
+	`height` FLOAT NULL,
+	`weight` FLOAT NULL,
+	`gender` TINYINT NOT NULL,
+	`birthdate` DATE NOT NULL,
+	`biography` LONGTEXT NULL
+);
+
+INSERT INTO `people`(name, picture, height, weight, gender, birthdate, biography)
+VALUES ('Pesho', ''),
